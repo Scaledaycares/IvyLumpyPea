@@ -1,0 +1,259 @@
+     /* Your CSS code here */
+     body {
+        font-family: Arial, sans-serif;
+      }
+img{
+  width:50px;
+  height:50px;
+}
+    .toggle-button {
+        position: fixed;
+        bottom: 250px; /* Positioned above the chat widget */
+        right: 20px;
+        background-color: #6c63ff;
+        color: white;
+       height:50px;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 15px;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+       display:none;
+    }
+      
+      #chat-widget {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 300px;
+        height: 450px;
+        background-color: #87CEEB;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+      }
+      
+      #chatbox {
+        flex-grow: 1;
+        padding: 10px;
+        overflow-y: auto;
+        
+      }
+      
+      .chat-user {
+        text-align: right;
+        color: purple;
+      }
+      
+      .chat-assistant {
+        text-align: left;
+        color: black;
+      }
+      
+      #chat-form {
+        display: flex;
+        padding: 10px;
+        border-top: 1px solid #ccc;
+        
+      }
+      
+      #chat-input {
+        flex-grow: 1;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px;
+        margin-right: 10px;
+        
+      }
+#chat-input:focus {
+  color: #000000;
+}
+      
+      button {
+        background-color: #87CEEB;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: black;
+      }
+.chatbot-header {
+  background-color: purple; /* Set a background color */
+  color: white; /* Set the text color */
+  padding: 10px; /* Add some padding for a nicer look */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center the text */
+  border-bottom: 4px solid purple;
+  height: 60px;
+}
+
+.chatbot-helper {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  font-size: 7px; /* Adjust the font size as needed */
+  color: white; /* Adjust the text color as needed */
+  padding: 2px 5px;
+ 
+}
+.chat-assistant::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: url('https://cdn.glitch.global/b3ab09eb-1116-4be8-a7e0-1c7e203a9b89/zyro-image%20(1).png?v=1691110550011');/* Replace with the actual image URL */
+  background-size: cover;
+  vertical-align: middle;
+}
+  #intro{
+        bottom: 300px;
+        color: white;
+        top: auto;
+        font-size: 10px;
+        
+      }
+#buttontext{
+  text-align: center;
+  margin-top: 0px; /* Adjust this value to your preference */
+}
+#question{
+  text-align: center;
+  color: black;
+  font-size:12.5px;
+  
+}
+#clicker{
+  
+  display:none;
+  color: white;
+}
+#clicker2{
+  display:none;
+  color: white;
+}
+
+#btn2{
+ background-color:purple;
+}
+#btn{
+ background-color:purple;
+}
+
+/* CSS code in chatbot-widget.css */
+
+#chatbot-close {
+ position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  background-color: purple;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#send{
+  height:25px;
+  width:25px;
+}
+#messagebtn:hover{
+  background-color:white;
+}
+.loading-dots {
+  display: flex;
+  align-items: center;
+   justify-content: flex-start; /* Changed from center to flex-start */
+  margin: 10px 0;
+}
+
+.loading-dots > div {
+  width: 8px;
+  height: 8px;
+  margin: 0 2px;
+  background-color: black; /* Or any color that suits your chatbox */
+  border-radius: 50%;
+  animation: loading-animation 1.4s infinite ease-in-out both;
+}
+
+.loading-dots > div:nth-child(1) { animation-delay: -0.32s; }
+.loading-dots > div:nth-child(2) { animation-delay: -0.16s; }
+
+@keyframes loading-animation {
+  0%, 80%, 100% { transform: scale(0); }
+  40% { transform: scale(1.0); }
+}
+
+
+.loading-dots span {
+  margin-left: 5px;
+  color: black; /* Adjust color as needed */
+  font-size: 14px; /* Adjust font size as needed */
+}
+.tour-booking {
+    background-color: green; /* Green background */
+    padding: 10px; /* Padding for some space inside the box */
+    text-align: center; /* Center the text */
+    color: white; /* White text color */
+    font-size: 14px; /* Adjust font size as needed */
+    border-top-left-radius: 10px; /* Match the border radius of the chat widget */
+    border-top-right-radius: 10px; /* Match the border radius of the chat widget */
+  display: block; /* Ensures it takes the full width */
+}
+
+.tour-booking a {
+    color: white; /* Ensures the link is also white */
+    text-decoration: none; /* Removes underline from the link */
+  display: block; /* Makes the link fill the entire div */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+}
+
+.tour-booking a:hover {
+    text-decoration: underline; /* Adds underline on hover for better user experience */
+}
+#calendly-widget-container {
+  transform:scale(75%);
+  position: fixed;
+  top:-70px;
+  right: -50px;
+  width: 400px; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+   z-index: 100; /* Higher z-index to ensure it's above the chatbot */
+  display: none; /* Hide it initially */
+  overflow: auto; /* Add scroll if content is larger than the container */
+}
+#back-to-chatbot {
+  position: fixed; /* Change to fixed for consistent positioning */
+  top: 25px; /* Adjust this to bring the button down */
+  left: 20px;
+  z-index: 2147483647; /* Ensure it's above the Calendly widget */
+  background-color: orange;
+  color: black;
+  border: 1px solid #dddddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Your existing CSS here */
+
+
+@media screen and (max-width: 768px) {
+    #calendly-widget-container {
+      height:700px;
+    }
+}
+
+a{
+  color:white;
+}
