@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatbot Example</title>
+   <link rel="stylesheet" href="chatbot-widget.css">
+  </head>
+  <body>
+     <div id="calendly-widget-container">
+        <button id="back-to-chatbot" style="position: absolute; top: 25px; left: 10px; z-index: 2147483647;">Back to Chatbot</button>
+  <!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/info-jee/aiwebsitechatbots-call" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
+</div>
+    <button class="toggle-button" id="chatbot-toggle">Chat</button> <!-- Toggle button -->
+   
+    <div id="chat-widget">
+     
+          <div class="tour-booking">
+     <a href="https://example.com/book-tour" target="_blank">Click here to book a free consultation</a>
+            </div>
+  
+      <button id="chatbot-close">X</button>
+       <div class="chatbot-header"> <span class="ai-assistant-title">AI Assistant</span>  <span class="chatbot-helper"><a href="https://aiwebsitechatbots.ca/" target="blank" id="a">Powered by AIWebsiteChatbots</a></span><p id="intro">Hi, I am a personal AI assistant, ask me anything you want to know about AiWebsiteChatbots, I could be on your website someday!</p></div> 
+      <div id="chatbox"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" value="Ask a question"/>
+        <button type="submit" id="messagebtn"><img src="https://cdn.glitch.global/0f5b6897-97c9-4f38-9c98-8f40fb50b8bf/send-message-2-2.png?v=1685326064924" alt="send message" id="send"></button>
+      </form>
+      <p id="question">
+        Did you find this information helpful?
+      </p>
+      <p id="buttontext">
+        <button id="btn"> Yes </button>
+        <button id="btn2">
+          No
+        </button>
+      </p>
+      <p id="clicker">Button has been clicked <span id="count">0</span> times.</p>
+ <p id="clicker2">Button has been clicked <span id="count2">0</span> times.</p>
+    </div>
+<script src="chatbot-widget.js"></script>
+  
+
+  </body>
+</html>
